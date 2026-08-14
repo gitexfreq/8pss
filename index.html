@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="8PSS is a Personal Secret System exploring how encrypted credentials can belong to identities, rather than identities being reduced to passwords.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://8pss.org/">
+  <meta property="og:title" content="8PSS — Personal Secret System">
+  <meta property="og:description" content="A private identity model in which encrypted credentials belong to identities, rather than identities being reduced to passwords.">
+  <meta property="og:site_name" content="8PSS">
+  <link rel="canonical" href="https://8pss.org/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial,sans-serif' font-size='39' fill='%23f1f0eb'%3E8%3C/text%3E%3C/svg%3E">
+  <title>8PSS — Personal Secret System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="8PSS home">
+      <span>8PSS</span>
+      <span>Personal Secret System</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#concept">Concept</a>
+      <a href="#system">System</a>
+      <a href="#magic-8">Magic 8</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker">Personal Secret System</p>
+        <h1 id="hero-title">8PSS</h1>
+        <p class="hero-statement">Your identity is not your password.</p>
+        <p class="hero-support">8PSS explores a private identity system where encrypted secrets belong to the person and can be presented when identity needs to be proven.</p>
+      </div>
+
+      <div class="hero-mark" aria-hidden="true">
+        <svg viewBox="0 0 520 360" focusable="false">
+          <path class="hero-loop hero-loop-a" d="M260 180C206 74 62 64 62 180s144 106 198 0Z"/>
+          <path class="hero-loop hero-loop-b" d="M260 180c54-106 198-116 198 0S314 286 260 180Z"/>
+          <circle class="hero-cross" cx="260" cy="180" r="5"/>
+        </svg>
+        <span class="hero-eight">8</span>
+      </div>
+    </section>
+
+    <section class="model ruled" id="concept" aria-labelledby="model-title">
+      <div class="section-intro">
+        <p class="section-number">01 / Model</p>
+        <h2 id="model-title">Begin with the person.</h2>
+      </div>
+
+      <div class="model-comparison">
+        <div class="identity-model" aria-label="8PSS model: Person, Identity, Secrets, Proof, Access">
+          <span>Person</span>
+          <span aria-hidden="true">↓</span>
+          <span>Identity</span>
+          <span aria-hidden="true">↓</span>
+          <span>Secrets</span>
+          <span aria-hidden="true">↓</span>
+          <span>Proof</span>
+          <span aria-hidden="true">↓</span>
+          <span>Access</span>
+        </div>
+        <div class="old-model">
+          <p>the old abstraction</p>
+          <div aria-label="Conventional model: site, username, password">
+            <span>site</span><span aria-hidden="true">→</span><span>username</span><span aria-hidden="true">→</span><span>password</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="letters ruled" id="system" aria-labelledby="system-title">
+      <div class="section-intro">
+        <p class="section-number">02 / The system</p>
+        <h2 id="system-title">Three terms. One lifecycle.</h2>
+      </div>
+
+      <dl class="letter-definitions">
+        <div>
+          <dt><span>P</span> Personal</dt>
+          <dd>The system belongs to the person. The encrypted private vault is authoritative.</dd>
+        </div>
+        <div>
+          <dt><span>S</span> Secret</dt>
+          <dd>A secret does not have to be a password. It may be generated, captured, imported, derived or cryptographically created.</dd>
+        </div>
+        <div>
+          <dt><span>S</span> System</dt>
+          <dd>Generation, encryption, authorization, storage, retrieval, Autofill and deletion are parts of one lifecycle.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="lifecycle ruled" aria-labelledby="lifecycle-title">
+      <div class="section-intro">
+        <p class="section-number">03 / Infinity lifecycle</p>
+        <h2 id="lifecycle-title">The vault is a relationship, not a destination.</h2>
+      </div>
+
+      <figure class="lifecycle-figure">
+        <svg viewBox="0 0 760 430" role="img" aria-labelledby="life-title life-desc">
+          <title id="life-title">The 8PSS continuous lifecycle</title>
+          <desc id="life-desc">Two connected loops cross at the encrypted vault and identity relationship. Generate leads to secret and vault. Identity leads to prove and access. Access returns to the vault.</desc>
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z"/>
+            </marker>
+          </defs>
+
+          <path class="life-path life-path-left" marker-end="url(#arrow)" d="M380 215C316 78 112 64 82 202c-24 112 84 172 190 120 45-22 77-62 108-107"/>
+          <path class="life-path life-path-right" marker-end="url(#arrow)" d="M380 215c64-137 268-151 298-13 24 112-84 172-190 120-45-22-77-62-108-107"/>
+
+          <g class="life-label">
+            <text x="102" y="121">Create</text>
+            <text x="74" y="248">Secret</text>
+            <text x="217" y="349">Vault</text>
+            <text x="521" y="349">Identity</text>
+            <text x="639" y="248">Prove</text>
+            <text x="582" y="121">Access</text>
+          </g>
+
+          <g class="crossing">
+            <circle class="crossing-ring" cx="380" cy="215" r="35"/>
+            <circle class="crossing-core" cx="380" cy="215" r="7"/>
+            <text x="380" y="278">encrypted relationship</text>
+          </g>
+        </svg>
+        <figcaption>
+          <span>Generate → Vault → Identify → Authenticate → Vault</span>
+          <span>A continuous system for creating, holding, proving and deliberately forgetting.</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="principle ruled" aria-labelledby="principle-title">
+      <p class="section-number">04 / Principle</p>
+      <h2 id="principle-title"><span>8PSS is a Personal Secret System in which</span> encrypted credentials belong to identities, rather than identities being reduced to passwords.</h2>
+    </section>
+
+    <section class="origin ruled" id="magic-8" aria-labelledby="origin-title">
+      <div class="section-intro">
+        <p class="section-number">05 / Origin</p>
+        <h2 id="origin-title">From Magic 8 to 8PSS.</h2>
+      </div>
+
+      <div class="origin-grid">
+        <div class="origin-copy">
+          <p>Magic 8 began by turning local randomness into memorable passphrases.</p>
+          <p>8PSS extends the idea: generate the secret, keep it private, associate it with identity, and present it only when required.</p>
+        </div>
+
+        <div class="project-state">
+          <div>
+            <h3>Current Magic 8 web project</h3>
+            <p>Local passphrase and password generation, with an optional themed fortune. Secrets are generated in the browser.</p>
+          </div>
+          <div>
+            <h3>Concept and direction</h3>
+            <p>Encrypted local credential storage, biometric authorization, Android Autofill, identity-associated secrets, TOTP material, passkeys and cryptographic credentials where appropriate, and deliberate deletion.</p>
+          </div>
+          <p class="status-note">Items described as direction are not claims of completed or independently verified functionality.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><span>8PSS</span> Personal Secret System</p>
+    <p>8pss.org</p>
+  </footer>
+</body>
+</html>
